@@ -50,23 +50,23 @@ function validate(){
   
   var text;
   if(name.length < 5){
-    text = "Please Enter valid Name";
+    text = "Please Enter your Name";
     error_message.innerHTML = text;
     return false;
   }
   if(email.indexOf("@") == -1 || email.length < 6){
-    text = "Please Enter valid Email";
+    text = "Please Enter your Email";
     error_message.innerHTML = text;
     return false;
   }
   if(isNaN(phone) || phone.length != 10){
-    text = "Please Enter valid Phone Number";
+    text = "Please Enter your Phone Number";
     error_message.innerHTML = text;
     return false;
   }
 
   if(subject.length < 2){
-    text = "Please Enter Subject";
+    text = "Please Enter the Subject";
     error_message.innerHTML = text;
     return false;
   }
